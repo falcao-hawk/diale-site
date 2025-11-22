@@ -1,78 +1,73 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site Estático — Diale</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">Diale</a>
-      <nav class="nav">
-        <ul>
-          <li><a href="#features">Recursos</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <h1>Construa algo incrível com HTML & CSS</h1>
-        <p>Uma página estática simples, responsiva e fácil de personalizar. Perfeita para protótipos e sites institucionais.</p>
-        <a class="btn" href="#contact">Fale conosco</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diale — Treinamento de Gestores</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Pequeno logo do header removido — banner full-width usado como identificação visual -->
       </div>
-    </section>
+    </header>
 
-    <section id="features" class="features container">
-      <h2>Recursos</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Design Responsivo</h3>
-          <p>Layout que se adapta a celulares, tablets e desktops.</p>
-        </article>
-        <article class="card">
-          <h3>Sem dependências</h3>
-          <p>Somente HTML e CSS — leve e fácil de hospedar.</p>
-        </article>
-        <article class="card">
-          <h3>Fácil de Customizar</h3>
-          <p>Variáveis CSS e classes simples para alterar cores e tipografia.</p>
-        </article>
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+          <div class="container hero-inner">
+            <div class="hero-text">
+              <h1>Página de teste — <a class="brand-link" href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">DIMALE Consultoria</a></h1>
+              <p class="lead">Esta página é apenas um teste de apresentação da <a class="brand-link" href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">DIMALE Consultoria</a>. Não contém formulários nem funcionalidades dinâmicas — apenas HTML e CSS.</p>
+              <div class="hero-cta">
+                <a class="btn" href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">Visitar DIMALE Consultoria</a>
+              </div>
+            </div>
+            <!-- debug image removed -->
+            <!-- hero-art removed: hero now uses a full-width background image (DIMALE-azul fundo Transparente.png) -->
+          </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>Quem Somos</h2>
+        <p>
+          A <a class="brand-link" href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">DIMALE Consultoria</a> atua na formação de gestores e equipes com foco em liderança prática, comunicação eficaz e cultura de alta performance.
+          Nossos programas combinam teoria e prática, facilitados por especialistas com ampla experiência corporativa.
+        </p>
+      </section>
+
+      <section id="services" class="services container">
+        <h2>Serviços</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Programa de Liderança</h3>
+            <p>Treinamentos modulares para desenvolver decisões estratégicas, gestão de pessoas e coaching de alto impacto.</p>
+          </article>
+          <article class="card">
+            <h3>Desenvolvimento de Equipes</h3>
+            <p>Oficinas e dinâmicas que melhoram colaboração, alinhamento de objetivos e performance coletiva.</p>
+          </article>
+          <article class="card">
+            <h3>Workshops In-Company</h3>
+            <p>Soluções customizadas para necessidades específicas da sua organização — presenciais ou online.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- seção 'Marcas & Materiais' removida conforme solicitação -->
+
+      <section id="contact" class="contact container">
+        <h2>Contato</h2>
+        <p>Esta página é apenas para teste. Para informações e propostas visite <a class="brand-link" href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">DIMALE Consultoria</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Diale. Todos os direitos reservados.</p>
+        <p><a href="https://dimaleconsultoria.com.br" target="_blank" rel="noopener">dimaleconsultoria.com.br</a></p>
       </div>
-    </section>
-
-    <section id="about" class="about container">
-      <h2>Sobre</h2>
-      <p>Este template é um ponto de partida para criar páginas estáticas. Use-o como base para o seu site, landing page ou portfólio.</p>
-    </section>
-
-    <section id="contact" class="contact container">
-      <h2>Contato</h2>
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulário de exemplo — implemente ação.');">
-        <label for="name">Nome</label>
-        <input id="name" name="name" type="text" placeholder="Seu nome" required>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
-
-        <label for="message">Mensagem</label>
-        <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
-
-        <button class="btn" type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Diale. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
